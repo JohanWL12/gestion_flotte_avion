@@ -1,6 +1,7 @@
 package com.example.gestion_flotte.service;
 
 import com.example.gestion_flotte.models.Avions;
+import com.example.gestion_flotte.models.Images;
 import com.example.gestion_flotte.models.Kilometrages;
 import com.example.gestion_flotte.repository.AvionsRepository;
 import org.springframework.beans.factory.annotation.Autowired;

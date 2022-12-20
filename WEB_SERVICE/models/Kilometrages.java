@@ -17,9 +17,9 @@ public class Kilometrages {
     private Integer idAvion;
     @Column(name="date")
     private Date date;
-    @Column(name="debut_km")
+    @Column(name="debutkm")
     private Double debutKm;
-    @Column(name = "fin_km")
+    @Column(name = "finkm")
     private Double finKm;
 //    @ManyToOne
 //    @JoinColumn(name = "idavion",referencedColumnName = "idavion")
