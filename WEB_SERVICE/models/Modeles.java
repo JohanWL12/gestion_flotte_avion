@@ -1,4 +1,4 @@
-package com.example.gestion_flotte.models;
+package com.example.gestion_flotte_avion_ws.models;
 
 import javax.persistence.*;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 package com.example.gestion_flotte.service;
 
 import com.example.gestion_flotte.models.Assurances;
 import com.example.gestion_flotte.repository.AssurancesRepository;
+=======
+package com.example.gestion_flotte_avion_ws.service;
+
+import com.example.gestion_flotte_avion_ws.models.Assurances;
+import com.example.gestion_flotte_avion_ws.repository.AssurancesRepository;
+>>>>>>> Stashed changes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
