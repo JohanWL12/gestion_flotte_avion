@@ -25,7 +25,7 @@ const PageDetails: React.FC = () =>
             <IonTitle>Détails véhicule</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <Details avion={item.avion} modele={item.modele} kilometrages={item.kilometrages}></Details>
+        <Details image={item.image} avion={item.avion} modele={item.modele} kilometrages={item.kilometrages}></Details>
       </IonPage>
 
     );
