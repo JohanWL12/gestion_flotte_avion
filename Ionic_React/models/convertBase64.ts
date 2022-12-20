@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useHistory } from "react-router";
 import { getURL } from "./sendRequest";
 
 const getBase64 = (file: File) => {
@@ -18,7 +17,7 @@ export const saveOrUpdateImage = (e: any, idavion: string, history: any) => {
     getBase64(file)
         .then(result => {
             let imageSrc = String(result);
-            axios.get(getURL("/" + idavion + "/image/" + imageSrc))
+            axios.post(getURL("/avions/newImage"), { avionid: idavion, base64: imageSrc })
                 .then(() => {
                     history.push("/details/" + idavion);
                 })

@@ -12,7 +12,7 @@ const ChangeImage: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Image to Base64</IonTitle>
+                    <IonTitle>Changer la photo</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
