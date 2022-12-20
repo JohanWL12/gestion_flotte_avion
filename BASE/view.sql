@@ -90,3 +90,5 @@ FROM Assurances a,
      (SELECT IdAvion, MAX(DateExpiration) AS DateExpiration FROM Assurances GROUP BY IdAvion) t
 where a.IdAvion = t.IdAvion
   and t.DateExpiration = a.DateExpiration;
+
+select * from images where idavion=2 order by datechangement desc limit 1;
