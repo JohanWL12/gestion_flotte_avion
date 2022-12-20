@@ -52,6 +52,7 @@ const Menu: React.FC = () => {
   const callback_deconnect=()=>{
     history.push('/avions');
   };
+  
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent>
@@ -75,6 +76,8 @@ const Menu: React.FC = () => {
           <IonItem>
             <IonIcon></IonIcon>
             <IonButton onClick={(ev)=>{
+              console.log("deconnect");
+              
               deconnect(callback_deconnect);
             }}>Déconnexion</IonButton>
           </IonItem>
