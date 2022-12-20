@@ -4,6 +4,7 @@ import com.example.gestion_flotte.format.Data;
 import com.example.gestion_flotte.models.Avions;
 import com.example.gestion_flotte.models.Kilometrages;
 import com.example.gestion_flotte.service.AvionsService;
+import com.example.gestion_flotte.service.ImagesService;
 import com.example.gestion_flotte.service.ModelesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,8 @@ public class AvionsController {
     AvionsService avionsService;
     @Autowired
     ModelesService modelesService;
+    @Autowired
+    ImagesService imagesService;
 
     //creating a get mapping that retrieves all the Avions detail from the database
     @GetMapping()
@@ -71,6 +74,7 @@ public class AvionsController {
             details.put("avion",v);
             details.put("modele",modelesService.getModelesById(v.getModele().getIdModele()));
             details.put("kilometrages",avionsService.getKilometrages(avionid));
+            details.put("image",imagesService.getImage(avionid));
             return new Data(details);
         }catch(Exception e){
             return new Error(e);
