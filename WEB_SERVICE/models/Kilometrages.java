@@ -10,7 +10,7 @@ import java.sql.Date;
 @NoArgsConstructor
 public class Kilometrages {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idkilometrage", nullable = false)
     private Integer id;
     @Column(name = "idavion")
