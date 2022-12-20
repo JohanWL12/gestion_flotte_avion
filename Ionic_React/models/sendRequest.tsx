@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function getURL(url_pattern:string) {
-    const port="8080";
-    const URL="http://localhost:";
-    return URL+port+url_pattern;
+    const URL="http://gestion-flotte-avion-ws-production.up.railway.app/";
+    console.log(URL+url_pattern);
+    return URL+url_pattern;
 }
 
 function useItems(url: string)
@@ -33,7 +33,7 @@ function useItems(url: string)
     return { item, error };
 }
 
-export function usePostItem(url:string,req_body:any) {
+function usePostItem(url:string,req_body:any) {
     const [item, setItem] = useState<any>([]);
     const [error, setError] = useState<any>(null);
 

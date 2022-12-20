@@ -25,7 +25,6 @@ import PageAssurance from './pages/PageAssurance';
 import Expiration from './pages/Expiration';
 import ListAvion from './pages/ListAvion';
 import Login from './pages/Login';
-import ChangeImage from './pages/ChangeImage';
 
 setupIonicReact();
 
@@ -53,9 +52,6 @@ const App: React.FC = () => {
             </Route>
             <Route path="/login" exact={true}>
               <Login/>
-            </Route>
-            <Route path="/setimage/:idavion" exact={true}>
-              <ChangeImage/>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

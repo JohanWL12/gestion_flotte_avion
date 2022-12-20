@@ -1,6 +1,3 @@
-import axios from "axios";
-import { getURL } from "./sendRequest";
-
 const getBase64 = (file: File) => {
     return new Promise(resolve => {
         let reader = new FileReader();
@@ -12,19 +9,13 @@ const getBase64 = (file: File) => {
     });
 };
 
-export const saveOrUpdateImage = (e: any, idavion: string, history: any) => {
+export const addImage = (e: any) => {
     let file = e.target.files[0];
     getBase64(file)
         .then(result => {
             let imageSrc = String(result);
-            axios.post(getURL("/avions/newImage"), { avionid: idavion, base64: imageSrc })
-                .then(() => {
-                    history.push("/details/" + idavion);
-                })
-                .catch(err => {
-                    console.log(err);
-                });
-
+            console.log(file);
+            console.log(imageSrc);
         })
         .catch(error => {
             console.log(error);
