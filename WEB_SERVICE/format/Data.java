@@ -1,4 +1,4 @@
-package com.example.gestion_flotte.format;
+package com.example.gestion_flotte_avion_ws.format;
 
 public class Data {
     private Object data;

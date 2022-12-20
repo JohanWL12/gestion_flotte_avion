@@ -1,10 +1,10 @@
-package com.example.gestion_flotte.controller;
+package com.example.gestion_flotte_avion_ws.controller;
 
-import com.example.gestion_flotte.format.Data;
-import com.example.gestion_flotte.models.Tokens;
-import com.example.gestion_flotte.models.Users;
-import com.example.gestion_flotte.service.TokensService;
-import com.example.gestion_flotte.service.UsersService;
+import com.example.gestion_flotte_avion_ws.format.Data;
+import com.example.gestion_flotte_avion_ws.models.Tokens;
+import com.example.gestion_flotte_avion_ws.models.Users;
+import com.example.gestion_flotte_avion_ws.service.TokensService;
+import com.example.gestion_flotte_avion_ws.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

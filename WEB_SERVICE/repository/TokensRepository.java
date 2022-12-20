@@ -1,6 +1,6 @@
-package com.example.gestion_flotte.repository;
+package com.example.gestion_flotte_avion_ws.repository;
 
-import com.example.gestion_flotte.models.Tokens;
+import com.example.gestion_flotte_avion_ws.models.Tokens;
 import javax.transaction.Transactional;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

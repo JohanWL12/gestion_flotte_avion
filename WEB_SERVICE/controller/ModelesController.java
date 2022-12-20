@@ -1,7 +1,7 @@
-package com.example.gestion_flotte.controller;
+package com.example.gestion_flotte_avion_ws.controller;
 
-import com.example.gestion_flotte.models.Modeles;
-import com.example.gestion_flotte.service.ModelesService;
+import com.example.gestion_flotte_avion_ws.models.Modeles;
+import com.example.gestion_flotte_avion_ws.service.ModelesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,8 +1,8 @@
-package com.example.gestion_flotte.service;
+package com.example.gestion_flotte_avion_ws.service;
 
-import com.example.gestion_flotte.models.Tokens;
-import com.example.gestion_flotte.models.Users;
-import com.example.gestion_flotte.repository.UsersRepository;
+import com.example.gestion_flotte_avion_ws.models.Tokens;
+import com.example.gestion_flotte_avion_ws.models.Users;
+import com.example.gestion_flotte_avion_ws.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;

@@ -1,8 +1,16 @@
+<<<<<<< Updated upstream
 package com.example.gestion_flotte.controller;
 
 import com.example.gestion_flotte.format.Data;
 import com.example.gestion_flotte.models.Assurances;
 import com.example.gestion_flotte.service.AssurancesService;
+=======
+package com.example.gestion_flotte_avion_ws.controller;
+
+import com.example.gestion_flotte_avion_ws.format.Data;
+import com.example.gestion_flotte_avion_ws.models.Assurances;
+import com.example.gestion_flotte_avion_ws.service.AssurancesService;
+>>>>>>> Stashed changes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

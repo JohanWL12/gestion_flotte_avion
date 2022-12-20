@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 package com.example.gestion_flotte.repository;
 
 import com.example.gestion_flotte.models.Assurances;
+=======
+package com.example.gestion_flotte_avion_ws.repository;
+
+import com.example.gestion_flotte_avion_ws.models.Assurances;
+>>>>>>> Stashed changes
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
-package com.example.gestion_flotte.repository;
+package com.example.gestion_flotte_avion_ws.repository;
 
-import com.example.gestion_flotte.models.Images;
+import com.example.gestion_flotte_avion_ws.models.Images;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;

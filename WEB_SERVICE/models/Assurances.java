@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 package com.example.gestion_flotte.models;
+=======
+package com.example.gestion_flotte_avion_ws.models;
+
+import com.example.gestion_flotte_avion_ws.models.Avions;
+>>>>>>> Stashed changes
 
 import lombok.NoArgsConstructor;
 

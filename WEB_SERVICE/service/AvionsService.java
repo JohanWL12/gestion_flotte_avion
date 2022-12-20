@@ -1,9 +1,9 @@
-package com.example.gestion_flotte.service;
+package com.example.gestion_flotte_avion_ws.service;
 
-import com.example.gestion_flotte.models.Avions;
-import com.example.gestion_flotte.models.Images;
-import com.example.gestion_flotte.models.Kilometrages;
-import com.example.gestion_flotte.repository.AvionsRepository;
+import com.example.gestion_flotte_avion_ws.models.Avions;
+import com.example.gestion_flotte_avion_ws.models.Images;
+import com.example.gestion_flotte_avion_ws.models.Kilometrages;
+import com.example.gestion_flotte_avion_ws.repository.AvionsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
