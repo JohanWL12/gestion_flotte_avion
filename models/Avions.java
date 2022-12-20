@@ -1,13 +1,8 @@
 package com.example.gestion_flotte_avion_ws.models;
 
-import javax.persistence.*;
 
-import lombok.Getter;
+import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "avions")

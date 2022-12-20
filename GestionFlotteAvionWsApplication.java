@@ -1,13 +1,13 @@
-package com.example.gestion_flotte_avion_ws_avion_ws;
+package com.example.gestion_flotte_avion_ws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+        import org.springframework.web.servlet.config.annotation.CorsRegistry;
+        import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-class GestionFlotteAvionWsApplicationTests {
+public class GestionFlotteAvionWsApplication {
 
     @Bean
     public WebMvcConfigurer corsConfigurer(){
@@ -15,13 +15,13 @@ class GestionFlotteAvionWsApplicationTests {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 WebMvcConfigurer.super.addCorsMappings(registry);
-                registry.addMapping("/**").allowedOrigins("http://localhost").allowedMethods("*").allowedHeaders("*");
+                registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").allowedOrigins("*").allowedMethods("*").allowedHeaders("*").maxAge(-1).allowCredentials(false);
             }
         };
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(GestionFlotteAvionWsApplicationTests.class, args);
+        SpringApplication.run(GestionFlotteAvionWsApplication.class, args);
     }
 
 }

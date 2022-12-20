@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 public interface TokensRepository extends CrudRepository<Tokens,Integer> {
     @Query(value = "select isTokenValid(?1)",nativeQuery = true)

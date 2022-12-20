@@ -1,11 +1,12 @@
 package com.example.gestion_flotte_avion_ws.models;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.OnDelete;
 
 import java.sql.Timestamp;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tokens")
