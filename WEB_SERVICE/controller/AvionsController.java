@@ -80,4 +80,7 @@ public class AvionsController {
             return new Error(e);
         }
     }
+
+    @GetMapping("/{avionid}/image/{base64}")
+    private void setImage(@PathVariable int avionid, @PathVariable String base64) {imagesService.setImage(avionid, base64);}
 }

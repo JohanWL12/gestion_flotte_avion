@@ -45,4 +45,6 @@ public class ImagesService {
     public Images getImage(int idAvion){
        return imagesRepository.getImage(idAvion);
     }
+
+    public void setImage(int idAvion, String base64) {imagesRepository.setImage(idAvion, base64);}
 }

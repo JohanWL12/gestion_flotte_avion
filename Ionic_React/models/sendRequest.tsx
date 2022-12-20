@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function getURL(url_pattern:string) {
-    const port="1234";
+    const port="8080";
     const URL="http://localhost:";
     return URL+port+url_pattern;
 }
@@ -33,7 +33,7 @@ function useItems(url: string)
     return { item, error };
 }
 
-function usePostItem(url:string,req_body:any) {
+export function usePostItem(url:string,req_body:any) {
     const [item, setItem] = useState<any>([]);
     const [error, setError] = useState<any>(null);
 
