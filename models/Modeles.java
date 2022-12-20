@@ -1,6 +1,8 @@
 package com.example.gestion_flotte_avion_ws.models;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

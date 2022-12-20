@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.security.MessageDigest;
 import java.time.LocalDate;
 import java.time.LocalTime;
