@@ -53,7 +53,7 @@ function checkConnection(callback_success:any,callback_error:any,idAvion:any) {
     console.log("TOKEN="+localStorage.getItem('user_token'));
     let token=localStorage.getItem('user_token');    
     if (token==null) {
-        callback_error;
+        callback_error();
         return;
     }
     
@@ -63,14 +63,14 @@ function checkConnection(callback_success:any,callback_error:any,idAvion:any) {
             console.log(response.data);
             if (response.data.data!=null) {
                 if (response.data.data==false) {
-                    callback_error;    
+                    callback_error();    
                 }else{
                     console.log("midotra ato foana ang");
                     
                     callback_success(idAvion);
                 }
             } else {
-                callback_error;
+                callback_error();
             }
         })
         .catch(error => {
@@ -85,13 +85,13 @@ function deconnect(callback_deconnect:any) {
         axios.post(getURL('/users/deconnect'), { token: token.toString() })
             .then((response) => {
                 localStorage.removeItem('user_token');
-                callback_deconnect
+                callback_deconnect();
             })
             .catch(error => {
                 console.log(error);
             })
     }else{
-        callback_deconnect;
+        callback_deconnect();
     }
 };
 

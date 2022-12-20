@@ -1,9 +1,8 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-//import Home from './pages/Home';
-import Login from './pages/Login';
-
+import { Redirect, Route } from 'react-router-dom';
+import Menu from './components/Menu';
+import Page from './pages/Page';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,26 +22,47 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import ListAvions from './pages/ListAvion';
+import PageDetails from './pages/PageDetails';
+import PageAssurance from './pages/PageAssurance';
+import Expiration from './pages/Expiration';
+import ListAvion from './pages/ListAvion';
+import Login from './pages/Login';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route path="/" exact={true}>
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/home" exact={true}>
-          <ListAvions />
-        </Route>
-        <Route path="/login" exact={true}>
-          <Login />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonSplitPane contentId="main">
+          <Menu />
+          <IonRouterOutlet id="main">
+            <Route path="/" exact={true}>
+              <Redirect to="/page/Inbox" />
+            </Route>
+            <Route path="/page/:name" exact={true}>
+              <Page />
+            </Route>
+            <Route path="/details/:idavion" exact={true}>
+              <PageDetails />
+            </Route>
+            <Route path="/assurances/expiration/:nbmois" exact={true}>
+              <PageAssurance />
+            </Route>
+            <Route path="/assurances/expiration" exact={true}>
+              <Expiration/>
+            </Route>
+            <Route path="/avions" exact={true}>
+              <ListAvion/>
+            </Route>
+            <Route path="/login" exact={true}>
+              <Login/>
+            </Route>
+          </IonRouterOutlet>
+        </IonSplitPane>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

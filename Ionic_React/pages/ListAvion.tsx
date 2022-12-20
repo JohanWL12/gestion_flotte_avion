@@ -21,7 +21,7 @@ import { useHistory } from 'react-router';
 const ListAvions: React.FC = () =>
 {
   //   const {data, error} = GetData("/avion","get",null);
-  const { item, error } = useItems("/Avions");
+  const { item, error } = useItems("/avions");
   const refresh = (e: CustomEvent) =>
   {
     setTimeout(() =>

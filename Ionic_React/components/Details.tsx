@@ -2,13 +2,12 @@ import {  IonCard, IonCardHeader, IonCardTitle,  IonContent,  IonHeader, IonMenu
 import ExploreContainer from "./ExploreContainer";
 
 export interface Detailsavion{
-  photo:any;
   avion:any;
   modele:any;
   kilometrages:Array<any>;
 }
 
-const Details: React.FC<Detailsavion>=({photo,avion,modele,kilometrages})=>{
+const Details: React.FC<Detailsavion>=({avion,modele,kilometrages})=>{
     
 
     return (
@@ -28,7 +27,6 @@ const Details: React.FC<Detailsavion>=({photo,avion,modele,kilometrages})=>{
           </IonCardHeader>
         </IonCard>
         <IonCard>
-          <img alt="" src={photo} />
           <table width="100%" border={1}>
             <thead>
             <tr>
