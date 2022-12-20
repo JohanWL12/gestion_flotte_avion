@@ -82,7 +82,7 @@ function deconnect(callback_deconnect:any) {
     let token=localStorage.getItem('user_token');
     if (token!=null) {
         console.log({ token: token });
-        axios.post(getURL('/users/deconnect'), { token: token.toString() })
+        axios.post(getURL('/users/disconnect'), { token: token.toString() })
             .then((response) => {
                 localStorage.removeItem('user_token');
                 callback_deconnect();

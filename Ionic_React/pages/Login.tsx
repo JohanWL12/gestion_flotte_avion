@@ -7,8 +7,8 @@ import { useHistory } from "react-router";
 
 
 const Login: React.FC = () => {
-    const [mail, setEmail] = useState('');
-    const [pwd, setPassword] = useState('');
+    const [mail, setEmail] = useState('rakoto@gmail.com');
+    const [pwd, setPassword] = useState('root');
 
     const [toast] = useIonToast();
     const history = useHistory();
@@ -34,6 +34,9 @@ const Login: React.FC = () => {
             })
     };
 
+    // setEmail("rakoto@gmail.com");
+    // setPassword("root");
+
     return (
         <IonPage>
             <IonHeader>
@@ -45,11 +48,11 @@ const Login: React.FC = () => {
                 <form className="ion-padding">
                     <IonItem>
                         <IonLabel position="floating">Adresse email</IonLabel>
-                        <IonInput onIonChange={(e: any) => setEmail(e.target.value)} />
+                        <IonInput onIonChange={(e: any) => setEmail(e.target.value)} value="rakoto@gmail.com"/>
                     </IonItem>
                     <IonItem>
                         <IonLabel position="floating">Mot de passe</IonLabel>
-                        <IonInput onIonChange={(e: any) => setPassword(e.target.value)} type="password" />
+                        <IonInput onIonChange={(e: any) => setPassword(e.target.value)} type="password" value="root" />
                     </IonItem>
                     <IonButton onClick={login} className="ion-margin-top" expand="block">Se Connecter</IonButton>
                 </form>
